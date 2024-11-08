@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/image2">
+
+    <!-- CardView để bo góc cho EditText -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tiêu đề"
+            android:padding="16dp"
+            android:background="@drawable/rounded_edittext_background"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView để bo góc cho EditText nội dung -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/editTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nội dung"
+            android:padding="16dp"
+            android:background="@drawable/rounded_edittext_background"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CheckBox để đánh dấu công việc quan trọng -->
+    <CheckBox
+        android:id="@+id/checkBoxImportant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quan trọng"
+        android:layout_marginTop="16dp" />
+
+    <!-- Dùng LinearLayout cho các nút và căn giữa chúng -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa" />
+
+    </LinearLayout>
+
+</LinearLayout>

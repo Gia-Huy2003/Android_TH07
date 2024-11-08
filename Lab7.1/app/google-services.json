@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1065903169330",
+    "project_id": "lab71-32add",
+    "storage_bucket": "lab71-32add.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065903169330:android:9175d52a2cad842b02c12b",
+        "android_client_info": {
+          "package_name": "com.example.bai71"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdoeYt_Uhh4k61eqYKP-9LNsEj4_Hp4jY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
