@@ -5,4 +5,6 @@
     <color name="dividerColor">#D0D0D0</color>
     <color name="green">#CCFF00</color>
     <color name="LightCyan">#E0FFFF</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="aqua">#00FFFF</color>
 </resources>

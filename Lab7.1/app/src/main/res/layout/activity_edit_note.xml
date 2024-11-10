@@ -1,69 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/image2">
+    android:background="@drawable/image3">
 
-    <!-- CardView để bo góc cho EditText -->
-    <androidx.cardview.widget.CardView
+    <!-- Tiêu đề -->
+    <EditText
+        android:id="@+id/editTextTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp">
+        android:hint="Tiêu đề"
+        android:padding="16dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:backgroundTint="@color/aqua"
+        android:layout_marginBottom="4dp"/>
 
-        <EditText
-            android:id="@+id/editTextTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Tiêu đề"
-            android:padding="16dp"
-            android:background="@drawable/rounded_edittext_background"/>
-    </androidx.cardview.widget.CardView>
+    <!-- Nội dung -->
+    <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Nội dung"
+        android:padding="16dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:backgroundTint="@color/aqua"/>
 
-    <!-- CardView để bo góc cho EditText nội dung -->
-    <androidx.cardview.widget.CardView
+    <!-- RadioGroup chứa 3 RadioButton -->
+    <RadioGroup
+        android:id="@+id/radioGroupCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp">
+        android:orientation="horizontal"
+        android:gravity="center">
 
-        <EditText
-            android:id="@+id/editTextContent"
-            android:layout_width="match_parent"
+        <RadioButton
+            android:id="@+id/radioButtonStudy"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Nội dung"
-            android:padding="16dp"
-            android:background="@drawable/rounded_edittext_background"/>
-    </androidx.cardview.widget.CardView>
+            android:layout_weight="1"
+            android:text="Học tập" />
 
-    <!-- CheckBox để đánh dấu công việc quan trọng -->
+        <RadioButton
+            android:id="@+id/radioButtonEntertainment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Giải trí" />
+
+        <RadioButton
+            android:id="@+id/radioButtonOther"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Khác" />
+    </RadioGroup>
+
+    <!-- CheckBox Quan trọng -->
     <CheckBox
         android:id="@+id/checkBoxImportant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quan trọng"
-        android:layout_marginTop="16dp" />
+        android:text="Quan trọng" />
 
-    <!-- Dùng LinearLayout cho các nút và căn giữa chúng -->
+    <!-- LinearLayout chứa hai nút Lưu và Xóa -->
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginTop="16dp">
 
+        <!-- Nút Lưu -->
         <Button
             android:id="@+id/buttonSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lưu"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="8dp" />  <!-- Cách nút Xóa một khoảng -->
 
+        <!-- Nút Xóa -->
         <Button
             android:id="@+id/buttonDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Xóa" />
-
     </LinearLayout>
 
 </LinearLayout>

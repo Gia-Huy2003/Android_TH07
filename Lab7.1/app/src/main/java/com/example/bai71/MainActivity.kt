@@ -41,10 +41,8 @@ class MainActivity : AppCompatActivity() {
                     note?.let { notesList.add(it) }
                 }
 
-                // Sắp xếp danh sách ghi chú sao cho các ghi chú quan trọng nằm ở đầu
                 notesList.sortByDescending { it.isImportant }
-
-                noteAdapter.notifyDataSetChanged() // Cập nhật lại RecyclerView
+                noteAdapter.notifyDataSetChanged()
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -56,9 +54,6 @@ class MainActivity : AppCompatActivity() {
     private fun onNoteClick(note: Note) {
         val intent = Intent(this, EditNoteActivity::class.java).apply {
             putExtra("noteId", note.id)
-            putExtra("noteTitle", note.title)
-            putExtra("noteContent", note.content)
-            putExtra("noteIsImportant", note.isImportant) // Truyền trạng thái isImportant
         }
         startActivity(intent)
     }

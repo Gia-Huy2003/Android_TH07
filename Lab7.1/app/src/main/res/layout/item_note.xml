@@ -17,7 +17,51 @@
         android:id="@+id/viewContentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="14sp"/>
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/viewTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timestamp"
+        android:textColor="#888888"
+        android:textSize="18sp" />
+
+    <!-- LinearLayout cho 3 CheckBox theo hàng ngang, khoảng cách đều nhau -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <!-- CheckBox Học tập -->
+        <CheckBox
+            android:id="@+id/checkboxStudy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Học tập"
+            android:layout_weight="1"
+            android:enabled="false" /> <!-- Vô hiệu hóa khả năng chọn -->
+
+        <!-- CheckBox Giải trí -->
+        <CheckBox
+            android:id="@+id/checkboxEntertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giải trí"
+            android:layout_weight="1"
+            android:enabled="false" /> <!-- Vô hiệu hóa khả năng chọn -->
+
+        <!-- CheckBox Khác -->
+        <CheckBox
+            android:id="@+id/checkboxOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khác"
+            android:layout_weight="1"
+            android:enabled="false" /> <!-- Vô hiệu hóa khả năng chọn -->
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonDelete"
